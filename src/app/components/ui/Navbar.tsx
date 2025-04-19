@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className='hidden sm:flex gap-4 text-white'>
             {navLinks.map((item, id) => { 
                 return(
-                    <div key={`${item}-${id}`} className='cursor-pointer'>{item}</div>
+                    <div key={`${item}-${id}`} className='cursor-pointer hover:text-yellow-500'>{item}</div>
                 )
             })}
         </div>
