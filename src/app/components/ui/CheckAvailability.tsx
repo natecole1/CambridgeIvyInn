@@ -9,11 +9,9 @@ import { Button } from "@/app/_components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
-  FormMessage,
 } from "@/app/_components/ui/form";
 
 import {
@@ -35,7 +33,7 @@ const formSchema = z.object({
 });
 
 const CheckAvailability = () => {
-  const [startDateReservation, setStartDateReservation ] = useState(new Date());  
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {

@@ -8,44 +8,12 @@ import { testimonials } from '@/app/constants';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 const Testimonials = () => {
-  function SampleNextArrow(props:any) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{
-          ...style,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          background: "#171717",
-          borderRadius: "100%",
-        }}
-        onClick={onClick}
-      />
-    );
-  }
+  
+ 
 
-  function SamplePrevArrow(props:any) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={className}
-        style={{
-           ...style, 
-           display: "flex", 
-           alignItems: "center", 
-           justifyContent: "center",
-           background: "#171717", 
-           borderRadius: "100%" 
-          }}
-        onClick={onClick}
-      />
-    );
-  }
-
-  var settings = {
+  const settings = {
     dots: false,
     infinite: true,
     speed: 500,
@@ -73,8 +41,7 @@ const Testimonials = () => {
     ],
     cssEase: "linear",
     className: "slides",
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+   
   };
 
   return (
